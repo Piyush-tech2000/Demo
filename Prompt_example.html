@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Prompt Of in JavaScript</title>
+    </head>
+
+    <style>
+        .back {
+            background-color: blue;
+            height: 40px;
+            border: black;
+            padding: 10px;
+        }
+    </style>
+
+    <body>
+        <div id="output" class="back">Hello Piyush</div>
+
+        <script>
+            var task = ["take out garbage","read a book","go to work","in home"];
+
+            const obj1 = {
+                color:"red",make:"ford",doors:5,model:"mustang"
+            };
+
+            console.log(obj1);
+
+            var obj12 = new Object();
+            obj12.color = "Blue";
+            console.log(obj12);
+
+            var progress = ["done","in progree","to do",45];
+
+            var que1 = prompt("which task 1-4");
+            var que2 = prompt("status 1 = done status 2 = in progress status 3 = to do");
+
+            var output = document.getElementById("output");
+
+            var html = "today you will " + task[(que1 - 1)] + "status of task = " + progress[que2 - 1];
+
+            output.innerHTML = html;
+
+        </script>
+
+
+    </body>
+</html>

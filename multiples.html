@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>Nedted Loop</title>
+</head>
+    <body>
+        <div id = "output"></div>
+        
+            <script>
+            
+            var output = document.getElementById("output");
+
+            var total = 0;
+
+            for(var p = 0;p<1000;p++){
+                if(p%5===0){
+                    total += p;
+                    output.innerHTML += "Value of p = "+p+" Sub Total = "+total+"<br>"
+                }
+            }
+            output.innerHTML += "Total "+total;
+
+            </script>
+        
+    </body>
+</html>
